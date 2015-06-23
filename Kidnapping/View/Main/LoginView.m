@@ -12,14 +12,16 @@
 - (instancetype)init{
     self = [super init];
     if (self) {
-        [self buildView];
+        self.scrollView = [[TPKeyboardAvoidingScrollView alloc]init];
+        self.accountTextField = [[UITextField alloc]init];
+        self.passwordTextField = [[UITextField alloc]init];
+        self.loginButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     }
     return self;
 }
 
 - (void)buildView
 {
-    self.scrollView = [[TPKeyboardAvoidingScrollView alloc]init];
     [self.scrollView setBackgroundColor:[UIColor whiteColor]];
     [self addSubview:self.scrollView];
     [self.scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -27,19 +29,16 @@
         make.size.mas_equalTo(CGSizeMake(self.bounds.size.width, self.bounds.size.height));
     }];
     
-    self.accountTextField = [[UITextField alloc]init];
     [self.accountTextField setBorderStyle:UITextBorderStyleRoundedRect];
     [self.accountTextField setPlaceholder:@"帳號"];
     [self.accountTextField setToolBar];
     [self.scrollView addSubview:self.accountTextField];
     
-    self.passwordTextField = [[UITextField alloc]init];
     [self.passwordTextField setBorderStyle:UITextBorderStyleRoundedRect];
     [self.passwordTextField setPlaceholder:@"密碼"];
     [self.passwordTextField setToolBar];
     [self.scrollView addSubview:self.passwordTextField];
     
-    self.loginButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [self.loginButton setTitle:@"登入" forState:UIControlStateNormal];
     [self.scrollView addSubview:self.loginButton];
     
@@ -68,6 +67,7 @@
 - (void)drawRect:(CGRect)rect
 {
     [super drawRect:rect];
+    [self buildView];
 }
 
 

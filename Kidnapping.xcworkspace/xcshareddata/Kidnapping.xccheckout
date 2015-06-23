@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0B2F9B6A-6BA9-4C11-8BAA-7AA1B7AB40E2</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Kidnapping</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D6972F4E38D1D036C4E41732738EB09D96F9BCCD</key>
+		<string>github.com:alexchueh/Kidnapping.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Kidnapping.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D6972F4E38D1D036C4E41732738EB09D96F9BCCD</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:alexchueh/Kidnapping.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D6972F4E38D1D036C4E41732738EB09D96F9BCCD</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D6972F4E38D1D036C4E41732738EB09D96F9BCCD</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Kidnapping</string>
+		</dict>
+	</array>
+</dict>
+</plist>
