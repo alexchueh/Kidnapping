@@ -95,13 +95,8 @@
             [self.selectTabView.registerButton setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
             [self.loginView setHidden:NO];
             [self.registerView setHidden:YES];
-            [UIView transitionWithView:self.loginView
-                              duration:.4
-                               options:UIViewAnimationOptionTransitionCrossDissolve
-                            animations:^{
-                                [self.registerView setContentMode:UIViewContentModeScaleAspectFill];
-                                [self.registerView setClipsToBounds:YES];
-                            } completion:NULL];
+            [self transitionWithView:self.loginView contentModeView:self.registerView];
+            [self clearTextFiledText:self.mainModel.loginTextFiledArray];
         }
             break;
         case SelectTabRegisterButton: {
@@ -109,13 +104,8 @@
             [self.selectTabView.registerButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
             [self.loginView setHidden:YES];
             [self.registerView setHidden:NO];
-            [UIView transitionWithView:self.registerView
-                              duration:.4
-                               options:UIViewAnimationOptionTransitionCrossDissolve
-                            animations:^{
-                                [self.loginView setContentMode:UIViewContentModeScaleAspectFill];
-                                [self.loginView setClipsToBounds:YES];
-                            } completion:NULL];
+            [self transitionWithView:self.registerView contentModeView:self.loginView];
+            [self clearTextFiledText:self.mainModel.registerTextFiledArray];
         }
             break;
             
@@ -177,6 +167,23 @@
             [alertView show];
         }
     }];
+}
+
+- (void)transitionWithView:(UIView *)transitionView contentModeView:(UIView *)contentModeView {
+    [UIView transitionWithView:transitionView
+                      duration:.4
+                       options:UIViewAnimationOptionTransitionCrossDissolve
+                    animations:^{
+                        [contentModeView setContentMode:UIViewContentModeScaleAspectFill];
+                        [contentModeView setClipsToBounds:YES];
+                    } completion:NULL];
+}
+
+- (void)clearTextFiledText:(NSArray *)textFieldArray {
+    for (UITextField *textField in textFieldArray)
+    {
+        [textField setText:@""];
+    }
 }
 
 @end

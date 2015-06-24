@@ -27,6 +27,15 @@
  *  手機號碼
  */
 @property (nonatomic, copy) NSString *phoneString;
+/**
+ *  登入頁面的TextField
+ */
+@property (nonatomic, strong) NSArray *loginTextFiledArray;
+/**
+ *  註冊頁面的TextField
+ */
+@property (nonatomic, strong) NSArray *registerTextFiledArray;
+
 +(MainModel *)sharedInstance;
 
 @end

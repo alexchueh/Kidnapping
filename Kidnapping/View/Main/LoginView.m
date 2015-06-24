@@ -15,6 +15,7 @@
         self.scrollView = [[TPKeyboardAvoidingScrollView alloc]init];
         self.accountTextField = [[UITextField alloc]init];
         self.passwordTextField = [[UITextField alloc]init];
+        [MainModel sharedInstance].loginTextFiledArray = @[self.accountTextField,self.passwordTextField];
         self.loginButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     }
     return self;

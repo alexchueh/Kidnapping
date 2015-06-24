@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Masonry.h"
 #import "Global.h"
+#import "MainModel.h"
 #import "UITextView+PIXTextViewCategory.h"
 #import "UITextField+PIXTextFieldCategory.h"
 

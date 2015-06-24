@@ -18,6 +18,7 @@
         self.passwordTextField = [[UITextField alloc]init];
         self.emailTextField = [[UITextField alloc]init];
         self.phoneTextField = [[UITextField alloc]init];
+        [MainModel sharedInstance].registerTextFiledArray = @[self.accountTextField,self.passwordTextField,self.emailTextField,self.phoneTextField];
         self.registerButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     }
     return self;
