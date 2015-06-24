@@ -20,8 +20,12 @@
     return self;
 }
 
-- (void)buildView
-{
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    [self buildView];
+}
+
+- (void)buildView {
     [self.scrollView setBackgroundColor:[UIColor whiteColor]];
     [self addSubview:self.scrollView];
     [self.scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -30,16 +34,17 @@
     }];
     
     [self.accountTextField setBorderStyle:UITextBorderStyleRoundedRect];
-    [self.accountTextField setPlaceholder:@"帳號"];
+    [self.accountTextField setPlaceholder:NSLocalizedString(@"Account", nil)];
     [self.accountTextField setToolBar];
     [self.scrollView addSubview:self.accountTextField];
     
     [self.passwordTextField setBorderStyle:UITextBorderStyleRoundedRect];
-    [self.passwordTextField setPlaceholder:@"密碼"];
+    [self.passwordTextField setPlaceholder:NSLocalizedString(@"Password", nil)];
     [self.passwordTextField setToolBar];
+    [self.passwordTextField setSecureTextEntry:YES];
     [self.scrollView addSubview:self.passwordTextField];
     
-    [self.loginButton setTitle:@"登入" forState:UIControlStateNormal];
+    [self.loginButton setTitle:NSLocalizedString(@"Login", nil) forState:UIControlStateNormal];
     [self.scrollView addSubview:self.loginButton];
     
     [self.accountTextField mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -63,12 +68,5 @@
         make.size.mas_equalTo(CGSizeMake(self.bounds.size.width - 10 * 2, 40));
     }];
 }
-
-- (void)drawRect:(CGRect)rect
-{
-    [super drawRect:rect];
-    [self buildView];
-}
-
 
 @end

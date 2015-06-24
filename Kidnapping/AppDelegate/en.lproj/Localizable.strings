@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  Kidnapping
+
+  Created by shadow on 2015/6/24.
+  Copyright (c) 2015年 shadow. All rights reserved.
+*/
+
+"Login" = "Login";
+"Register" = "Register";
+"Account" = "Account";
+"Password" = "Password";
+"Email" = "Email";
+"Phone" = "Phone";

@@ -34,6 +34,10 @@
 		BFE99DD81B39084100EAA9D0 /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE99DD71B39084100EAA9D0 /* LoginView.m */; };
 		BFE99DDC1B39089D00EAA9D0 /* UITextView+PIXTextViewCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE99DDB1B39089D00EAA9D0 /* UITextView+PIXTextViewCategory.m */; };
 		BFE99DE01B390E1200EAA9D0 /* UITextField+PIXTextFieldCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE99DDF1B390E1200EAA9D0 /* UITextField+PIXTextFieldCategory.m */; };
+		BFE99DE41B3A5CC700EAA9D0 /* MainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE99DE31B3A5CC700EAA9D0 /* MainModel.m */; };
+		BFE99DE71B3A85DA00EAA9D0 /* SelectTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE99DE61B3A85DA00EAA9D0 /* SelectTabView.m */; };
+		BFE99DEA1B3A85FD00EAA9D0 /* RegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE99DE91B3A85FD00EAA9D0 /* RegisterView.m */; };
+		BFE99DED1B3A89B900EAA9D0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BFE99DEF1B3A89B900EAA9D0 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +93,14 @@
 		BFE99DDB1B39089D00EAA9D0 /* UITextView+PIXTextViewCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+PIXTextViewCategory.m"; sourceTree = "<group>"; };
 		BFE99DDE1B390E1200EAA9D0 /* UITextField+PIXTextFieldCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+PIXTextFieldCategory.h"; sourceTree = "<group>"; };
 		BFE99DDF1B390E1200EAA9D0 /* UITextField+PIXTextFieldCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+PIXTextFieldCategory.m"; sourceTree = "<group>"; };
+		BFE99DE21B3A5CC700EAA9D0 /* MainModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainModel.h; sourceTree = "<group>"; };
+		BFE99DE31B3A5CC700EAA9D0 /* MainModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainModel.m; sourceTree = "<group>"; };
+		BFE99DE51B3A85DA00EAA9D0 /* SelectTabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectTabView.h; sourceTree = "<group>"; };
+		BFE99DE61B3A85DA00EAA9D0 /* SelectTabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectTabView.m; sourceTree = "<group>"; };
+		BFE99DE81B3A85FD00EAA9D0 /* RegisterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterView.h; sourceTree = "<group>"; };
+		BFE99DE91B3A85FD00EAA9D0 /* RegisterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterView.m; sourceTree = "<group>"; };
+		BFE99DEE1B3A89B900EAA9D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BFE99DF11B3A8B4200EAA9D0 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +226,7 @@
 				BFE99D921B38FCD300EAA9D0 /* AppDelegate.h */,
 				BFE99D931B38FCD300EAA9D0 /* AppDelegate.m */,
 				BFE99DA61B38FE5900EAA9D0 /* Global.h */,
+				BFE99DEF1B3A89B900EAA9D0 /* Localizable.strings */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -239,6 +252,7 @@
 		BFE99D971B38FD0C00EAA9D0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BFE99DE11B3A5C9100EAA9D0 /* Main */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -299,8 +313,12 @@
 		BFE99DCE1B39079F00EAA9D0 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				BFE99DE51B3A85DA00EAA9D0 /* SelectTabView.h */,
+				BFE99DE61B3A85DA00EAA9D0 /* SelectTabView.m */,
 				BFE99DD61B39084100EAA9D0 /* LoginView.h */,
 				BFE99DD71B39084100EAA9D0 /* LoginView.m */,
+				BFE99DE81B3A85FD00EAA9D0 /* RegisterView.h */,
+				BFE99DE91B3A85FD00EAA9D0 /* RegisterView.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -330,6 +348,15 @@
 				BFE99DDF1B390E1200EAA9D0 /* UITextField+PIXTextFieldCategory.m */,
 			);
 			path = "UITextField+PIXTextFieldCategory";
+			sourceTree = "<group>";
+		};
+		BFE99DE11B3A5C9100EAA9D0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				BFE99DE21B3A5CC700EAA9D0 /* MainModel.h */,
+				BFE99DE31B3A5CC700EAA9D0 /* MainModel.m */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		D6E32758761F7C91C5E8A081 /* Pods */ = {
@@ -406,6 +433,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hant",
 			);
 			mainGroup = BFE99D5F1B38FB4C00EAA9D0;
 			productRefGroup = BFE99D691B38FB4C00EAA9D0 /* Products */;
@@ -424,6 +452,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFE99D791B38FB4C00EAA9D0 /* Images.xcassets in Resources */,
+				BFE99DED1B3A89B900EAA9D0 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,9 +505,12 @@
 			files = (
 				BFE99DA51B38FDFB00EAA9D0 /* APIObject.m in Sources */,
 				BFE99DD51B39082600EAA9D0 /* BaseView.m in Sources */,
+				BFE99DE41B3A5CC700EAA9D0 /* MainModel.m in Sources */,
 				BFE99DD81B39084100EAA9D0 /* LoginView.m in Sources */,
 				BFE99D6E1B38FB4C00EAA9D0 /* main.m in Sources */,
+				BFE99DEA1B3A85FD00EAA9D0 /* RegisterView.m in Sources */,
 				BFE99D9C1B38FD6900EAA9D0 /* BaseViewController.m in Sources */,
+				BFE99DE71B3A85DA00EAA9D0 /* SelectTabView.m in Sources */,
 				BFE99D941B38FCD300EAA9D0 /* AppDelegate.m in Sources */,
 				BFE99DDC1B39089D00EAA9D0 /* UITextView+PIXTextViewCategory.m in Sources */,
 				BFE99DE01B390E1200EAA9D0 /* UITextField+PIXTextFieldCategory.m in Sources */,
@@ -503,6 +535,18 @@
 			targetProxy = BFE99D821B38FB4C00EAA9D0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BFE99DEF1B3A89B900EAA9D0 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFE99DEE1B3A89B900EAA9D0 /* en */,
+				BFE99DF11B3A8B4200EAA9D0 /* zh-Hant */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		BFE99D891B38FB4C00EAA9D0 /* Debug */ = {
@@ -597,7 +641,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Kidnapping/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "c6a2f7a7-4b85-45bc-a3d5-36b9ffe6e7c2";
@@ -614,7 +658,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Kidnapping/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "c6a2f7a7-4b85-45bc-a3d5-36b9ffe6e7c2";

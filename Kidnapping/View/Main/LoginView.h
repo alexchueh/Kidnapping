@@ -10,9 +10,21 @@
 #import "TPKeyboardAvoidingScrollView.h"
 
 @interface LoginView : BaseView
+/**
+ *  背景ScrollView，主要目的是繼承TPKeyboardAvoidingScrollView讓TextFieldView在鍵盤彈出時可以滑動到可視範圍
+ */
 @property (nonatomic, strong) TPKeyboardAvoidingScrollView *scrollView;
+/**
+ *  輸入帳號的TextFieldView
+ */
 @property (nonatomic, strong) UITextField *accountTextField;
+/**
+ *  輸入密碼的TextFieldView
+ */
 @property (nonatomic, strong) UITextField *passwordTextField;
+/**
+ *  登入的按鈕
+ */
 @property (nonatomic, strong) UIButton *loginButton;
 
 @end

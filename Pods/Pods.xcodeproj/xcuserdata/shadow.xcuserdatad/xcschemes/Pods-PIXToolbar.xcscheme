@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "55DA43FAF93F88C8C56FFBC7"
+               BlueprintIdentifier = "B554BADF9253F4206D5ECB41"
                BuildableName = "libPods-PIXToolbar.a"
                BlueprintName = "Pods-PIXToolbar"
                ReferencedContainer = "container:Pods.xcodeproj">

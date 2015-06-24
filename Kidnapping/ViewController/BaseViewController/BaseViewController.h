@@ -11,6 +11,7 @@
 #import "APIObject.h"
 #import "Masonry.h"
 #import "TPKeyboardAvoidingScrollView.h"
+#import "ReactiveCocoa.h"
 
 @interface BaseViewController : UIViewController
 
